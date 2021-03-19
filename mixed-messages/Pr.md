@@ -6,5 +6,6 @@
  4. Develop locally on your computer
 
 #### Plans
+    +Well first I want to figure out why GitHub isn't properly getting these commits
     +When program is run, will produce message by compiling different quotes into a single quote.
     +
