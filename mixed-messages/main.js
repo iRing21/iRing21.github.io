@@ -11,4 +11,35 @@ Use command line
 Develop locally on your computer
 */ 
 
-const quoteData = require('./quotedatabase.json');
+const quoteData = require('./quotedatabase.json').myObjects; // imports quote database object array created in a JSON
+const pulledQuotes = []; // for storing the objects that are used in upcoming mixed message
+
+const selectQuote = () => { // randomly picks a an object from QuoteData, stores that object in Pulled Quote, and returns the selected object
+    const randomNum = Math.floor(Math.random()  * quoteData.length); 
+    const selectedQuote = quoteData[randomNum];
+    pulledQuotes.push(selectedQuote);
+    return selectedQuote;
+}
+
+const splitIntoArray = inputObj =>{
+    const splitString = inputObj.quote.split(" ");
+    return splitString;  
+}
+
+const extractExcerpt = inputArray => {
+    const startingPoint = Math.floor(Math.random() * inputArray.length);
+    console.log(startingPoint);
+    const endingPoint = Math.floor(Math.random() * (inputArray.length-startingPoint+1) + startingPoint);
+    console.log(endingPoint);
+    const excerpt = inputArray.slice(startingPoint, endingPoint)
+    console.log(excerpt.join(" "))
+    return excerpt.join(" ");
+}
+
+const quoteConstructor = () =>{
+    const amountOfExcerpts = Math.random(Math.floor *6);
+    console.log(amountOfExcerpts);
+    return `$
+}
+
+extractExcerpt(splitIntoArray(selectQuote()));
