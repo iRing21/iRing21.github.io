@@ -8,10 +8,8 @@
 #### Plans
 
     1. Implementing quote database to draw from
-        +Array of objects, that include keys of 'quote' and 'quoted' a function to randomly select an array item. Include a function in the object that determines quote length/amount of words
+        +Array of objects, that include keys of 'quote' and 'quoted', in JSON.
     2. Constructing a 'mixed message' using quote database
-        +Function to randomly select a portion of that quote, by choosing a starting point and ending point within the bounds of the quote, minimum of one word long
-        +Function to concatinate at least three, but up to 6 (arbitrary I know), instances of this. 
-    3. Recalling data about the quotes
-        +If ambitious, make a function that will print data about the quote you generated, using the object values of the originial quotes.
-    
+        +Function to randomly select a portion of a quote from the database, minimum of one word long
+        +Above function will determine quote length, randomly choosing a starting point and end point, ie if starting point is last word, just take that, otherwise pick random length less than quote length. 
+        +Function to concatinate at least three, but up to 6 (arbitrary I know), instances of this. Storing it as an object with userName, the new quote, as well as the quotes/quoted people the quote was extracted from.
