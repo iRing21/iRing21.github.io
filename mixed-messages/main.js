@@ -10,3 +10,5 @@ Use Git version control
 Use command line
 Develop locally on your computer
 */ 
+
+const quoteData = require('./quotedatabase.json');
