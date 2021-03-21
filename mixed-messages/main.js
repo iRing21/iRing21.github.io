@@ -28,18 +28,29 @@ const splitIntoArray = inputObj =>{
 
 const extractExcerpt = inputArray => {
     const startingPoint = Math.floor(Math.random() * inputArray.length);
-    console.log(startingPoint);
+    //console.log(startingPoint);
     const endingPoint = Math.floor(Math.random() * (inputArray.length-startingPoint+1) + startingPoint);
-    console.log(endingPoint);
+   // console.log(endingPoint);
     const excerpt = inputArray.slice(startingPoint, endingPoint)
-    console.log(excerpt.join(" "))
+    //console.log(excerpt.join(" "))
     return excerpt.join(" ");
 }
 
 const quoteConstructor = () =>{
-    const amountOfExcerpts = Math.random(Math.floor *6);
-    console.log(amountOfExcerpts);
-    return `$
+    const amountOfExcerpts = Math.floor(Math.random()*6) +3;
+    let finalQuote = "";
+    // console.log(amountOfExcerpts);
+    for (let i = 0; i < amountOfExcerpts; i++){
+        finalQuote += ` ${extractExcerpt(splitIntoArray(selectQuote()))}`;
+    }
+    console.log(finalQuote);
+    return finalQuote;
 }
 
-extractExcerpt(splitIntoArray(selectQuote()));
+const constructedQuoteOrigins = () => {
+    pulledQuotes.forEach(element => { console.log(`Quote: ${element.quote} - Quoted: ${element.quoted}`)    
+    });
+}
+
+quoteConstructor();
+constructedQuoteOrigins();
