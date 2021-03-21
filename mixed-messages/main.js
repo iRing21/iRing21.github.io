@@ -1,18 +1,6 @@
-/* For this project, you will build a message generator program. 
-Every time a user runs a program, they should get a new, randomized output. 
-You’re welcome to take the project in a couple of different forms, like an astrology generator, inspirational message, or nonsensical jokes. 
-To make your program truly random, the message that it outputs should be made up of at least three different pieces of data. 
-Take what you know of JavaScript syntax so far to build the program and customize it to your liking.
-
-Project Objectives:
-Build a message generator program using JavaScript
-Use Git version control
-Use command line
-Develop locally on your computer
-*/ 
 
 const quoteData = require('./quotedatabase.json').myObjects; // imports quote database object array created in a JSON
-const pulledQuotes = []; // for storing the objects that are used in upcoming mixed message
+const pulledQuotes = []; // for storing the objects that are used in upcoming mixed message, can be retrieved later using constructedQuoteOrigins();
 
 const selectQuote = () => { // randomly picks a an object from QuoteData, stores that object in Pulled Quote, and returns the selected object
     const randomNum = Math.floor(Math.random()  * quoteData.length); 
@@ -21,25 +9,21 @@ const selectQuote = () => { // randomly picks a an object from QuoteData, stores
     return selectedQuote;
 }
 
-const splitIntoArray = inputObj =>{
+const splitIntoArray = inputObj =>{ // splits quote into an array of words
     const splitString = inputObj.quote.split(" ");
     return splitString;  
 }
 
-const extractExcerpt = inputArray => {
+const extractExcerpt = inputArray => { // takes a random length excerpt, minimum length of 1 element, joins it into a string and returns it.
     const startingPoint = Math.floor(Math.random() * inputArray.length);
-    //console.log(startingPoint);
-    const endingPoint = Math.floor(Math.random() * (inputArray.length-startingPoint+1) + startingPoint);
-   // console.log(endingPoint);
+    const endingPoint = Math.floor(Math.random() * (inputArray.length-startingPoint) + startingPoint + 1);
     const excerpt = inputArray.slice(startingPoint, endingPoint)
-    //console.log(excerpt.join(" "))
     return excerpt.join(" ");
 }
 
-const quoteConstructor = () =>{
+const quoteConstructor = () =>{ // Uses above functions to concatinate together a random quote, running the extractExcerpt function a minimum of 3 times, up to an arbitrary limit
     const amountOfExcerpts = Math.floor(Math.random()*6) +3;
     let finalQuote = "";
-    // console.log(amountOfExcerpts);
     for (let i = 0; i < amountOfExcerpts; i++){
         finalQuote += ` ${extractExcerpt(splitIntoArray(selectQuote()))}`;
     }
@@ -47,7 +31,7 @@ const quoteConstructor = () =>{
     return finalQuote;
 }
 
-const constructedQuoteOrigins = () => {
+const constructedQuoteOrigins = () => { // allows you to see the quotes used in creating the new quote, and who said them. Displays them in order used. 
     pulledQuotes.forEach(element => { console.log(`Quote: ${element.quote} - Quoted: ${element.quoted}`)    
     });
 }
