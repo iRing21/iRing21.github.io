@@ -34,6 +34,26 @@ body {
     opacity: 90; 
 }
 
+#compositionDesc {
+    display: inline;
+}
+
+#editingDesc {
+    display: none;
+}
+
+#mixingDesc {
+    display: none;
+}
+
+#masteringDesc {
+    display: none;
+}
+
+#voiceDesc {
+    display: none;
+}
+
 
 .infoBar {
     padding: 10px;
