@@ -29,22 +29,22 @@ body {
     /* pictures gonna be cropped to one size, somewhere around 515/400 */
 }
 
-.col {
-    padding: 25px;
-    text-align: start;
-    align-self: flex-start;
+#tableture {
+    background-color: aliceblue;
+    opacity: 90; 
 }
 
 
 .infoBar {
     padding: 10px;
     text-align: center;
-    background-color: lightgray;
+    background-image: var(--bs-gradient);.
+    background-color: lightgray; 
     margin: 10px;
 }
 
 .accordion{
-    
+
 }
 
 footer {

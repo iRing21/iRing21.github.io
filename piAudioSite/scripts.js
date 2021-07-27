@@ -1,21 +1,20 @@
-// Beneath is for changing profile pic
 
-const picSelectorInput = Math.floor(Math.random() * 3);
-
-const pic = document.getElementById("pic");
-
-function picSelector() {
-    switch (picSelectorInput) {
-        case 0:
-            pic.src = "media/lilycropped.png";
-            break;  // Lily cropped pic
-        case 1:
-            pic.src = "media/coatcropped.png";
-            break; // coat cropped pic
-        case 2: 
-            pic.src = "media/mecropped.png";
-            break; // me cropped pic
-    }
+document.getElementById("compButt").addEventListener("click", function() {
+    document.getElementById("compositionDesc").style.display = "inline";
 }
 
-pic.onload = picSelector();
+document.getElementById("editingButt").addEventListener("click", function() {
+    document.getElementById("editingDesc").style.display = "inline";
+}
+
+document.getElementById("mixingButt").addEventListener("click", function() {
+    document.getElementById("mixingDesc").style.display = "inline";
+}
+
+document.getElementById("masteringButt").addEventListener("click", function() {
+    document.getElementById("masteringDesc").style.display = "inline";
+}
+
+document.getElementById("voiceButt").addEventListener("click", function() {
+    document.getElementById("voiceDesc").style.display = "inline";
+}
