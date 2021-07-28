@@ -75,15 +75,17 @@
               </button>
             </div>
           </div>
-          <section class="container border border-5 shadow" id="tableture">
-            <div class="btn-group" id="tabs" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-primary" id="compButt">Composition</button>
-              <button type="button" class="btn btn-primary" id="editingButt">Editing</button>
-              <button type="button" class="btn btn-primary" id="mixingButt">Mixing</button>
-              <button type="button" class="btn btn-primary" id="masteringButt">Mastering</button>
-              <button type="button" class="btn btn-primary" id="voiceButt">Voiceover</button>
+          <section class="container" id="tableture">
+            <div class="d-flex justify-content-center" id="buttonGroupContainer">
+              <div class="btn-group" id="tabs" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary" id="compButt">Composition</button>
+                <button type="button" class="btn btn-primary" id="editingButt">Editing</button>
+                <button type="button" class="btn btn-primary" id="mixingButt">Mixing</button>
+                <button type="button" class="btn btn-primary" id="masteringButt">Mastering</button>
+                <button type="button" class="btn btn-primary" id="voiceButt">Voiceover</button>
+              </div>
             </div>
-            <div class="container" id="descriptionContainer">
+            <div class="container border border-5 shadow" id="descriptionContainer">
               <div class="container tabDesciptions" id="compositionDesc">
                 <p>A descrption of composition</p>
               </div>
@@ -101,22 +103,23 @@
               </div>
             </div> 
           </section>
-          </div>
-          <div class="container-fluid infoBar" id="bio">
-            <h3>Bio</h3>
-            <p>Peter and Ian are two people who do audio stuff and are good at it. 
-                We went to school for it actually. Ian likes stuff.
-                Peter also likes stuff. Together, we do professional stuff.
-                Hire us.
-            </p> 
-          </div>
-          <div id="examplesHeading" class="container-fluid infoBar">
-            <h2>Examples of Work</h2>
-            <p>All audio was composed, recorded, mixed, edited, and mastered in house...
-              unless otherwise noted.
-            </p>
-          </div>
-          <div class="accordion" id="audioExamples">
+          <section class="container" id="infoBarSection">
+            <div class="container-fluid infoBar" id="bio">
+              <h3>Bio</h3>
+              <p>Peter and Ian are two people who do audio stuff and are good at it. 
+                  We went to school for it actually. Ian likes stuff.
+                  Peter also likes stuff. Together, we do professional stuff.
+                  Hire us.
+              </p> 
+            </div>
+            <div class="container-fluid  infoBar" id="examplesHeading">
+              <h2>Examples of Work</h2>
+              <p>All audio was composed, recorded, mixed, edited, and mastered in house...
+                unless otherwise noted.
+              </p>
+            </div>
+        </section>
+          <div class="accordion " id="audioExamples">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

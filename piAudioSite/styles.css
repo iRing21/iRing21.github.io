@@ -29,9 +29,12 @@ body {
     /* pictures gonna be cropped to one size, somewhere around 515/400 */
 }
 
-#tableture {
-    background-color: aliceblue;
-    opacity: 90; 
+
+/* Tab thing */
+
+
+#tabs {
+   width: 75%;
 }
 
 #compositionDesc {
@@ -54,17 +57,24 @@ body {
     display: none;
 }
 
+#descriptionContainer {
+    background-color: aliceblue;
+
+}
+
+/* Info bars */
+
 
 .infoBar {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     background-image: var(--bs-gradient);.
-    background-color: lightgray; 
-    margin: 10px;
+    margin-top: 20px !important;
+    justify-self: center;
 }
 
 .accordion{
-
+    margin: 20px;
 }
 
 footer {
