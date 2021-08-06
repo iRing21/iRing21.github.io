@@ -1,14 +1,6 @@
-/* To-Do:s Center imgs in carousel, make max height for carousel imgs as well
-        Add margins to different sections, borders
-        Center 'examples of work' container
-
-        All imgs should be same size, or we should decide on a set size for the carousel
-
-*/
-
 body {
-    background-color: rgb(189, 178, 175); 
-    /* color based on photos */ 
+    background-color: #D9D6CF;
+    /*old background-color: rgb(189, 178, 175); */
     
 }
 
@@ -34,59 +26,69 @@ body {
 
 
 #tabs {
-   width: 75%;
+   max-width: 75%;
+}
+
+.btn-primary { /*TODO: change background color */
+
 }
 
 #compositionDesc {
     display: inline;
 }
 
-#editingDesc {
-    display: none;
-}
-
 #mixingDesc {
     display: none;
 }
 
-#masteringDesc {
+#advertisingDesc {
     display: none;
 }
 
-#voiceDesc {
+#contactDesc {
+    display: none;
+}
+
+#bioDesc {
     display: none;
 }
 
 #descriptionContainer {
     background-color: aliceblue;
     height: 200px; /* once descriptions have been decided on, just set it to one 
-    that contains all of them */ 
+    a min height that contains them all */
 
 }
 
-/* Info bars */
+/* Accordion Section */
 
+#workExamplesSection {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .infoBar {
     padding: 10px;
     text-align: center;
-    background-color: grey;
+    background-color: #CFD2D9;
     margin-top: 20px !important;
     justify-self: center;
 }
 
 .accordion{
-    margin: 20px;
+    /* TODO: make the infoBar and accordion seem more
+    like they belong together through styling */
 }
 
 footer {
     display: flex;
-
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
     text-align: center;
     padding: 25px;
     justify-content: space-around;
     align-items: center;
     opacity: 75;
 
-    /* fixed footer with copyright ?*/
 }
