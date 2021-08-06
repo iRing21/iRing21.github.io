@@ -4,6 +4,8 @@ body {
     
 }
 
+/* Carousel */
+
 #carousel {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -26,10 +28,16 @@ body {
 
 
 #tabs {
-   max-width: 75%;
+   min-width: 60%;
+   flex-wrap: wrap;
 }
 
-.btn-primary { /*TODO: change background color */
+
+.btn-primary { /*TODO: change background color, original was #0d6efd */
+    /* background-color: #6C8493;
+    border-color: #6C8493; */
+    background-color: #4F606B ;
+    border-color: #4F606B;
 
 }
 
@@ -75,10 +83,13 @@ body {
     justify-self: center;
 }
 
-.accordion{
-    /* TODO: make the infoBar and accordion seem more
-    like they belong together through styling */
+
+audio {
+    max-width: 100%;
+    
 }
+
+/* Footer */
 
 footer {
     display: flex;
@@ -90,5 +101,36 @@ footer {
     justify-content: space-around;
     align-items: center;
     opacity: 75;
+
+}
+
+/* Media Queries...
+        ToDo: make it so first button doesn't align weird? if possible  */
+
+@media only screen and (max-width: 991px) { /* for making buttons become rectangular */
+    .btn {
+        border-radius: 0;
+    }
+
+    #tabs {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 7750px) {
+    #descriptionContainer {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #carousel{
+        display: none;
+    }
+
+    #tableture {
+        margin-top: 20px;
+    }
 
 }
