@@ -4,6 +4,12 @@ body {
     
 }
 
+/* Nav bar */
+
+#referencesLink {
+    display: none; /* change once we actually have a reference page */ 
+}
+
 /* Carousel */
 
 #carousel {
@@ -11,16 +17,16 @@ body {
     margin-bottom: 10px;
     align-items: center;
     justify-content: center;
-    max-height: 20% !important;
-    max-width: 50%; 
+    max-width: 40% !important;
 }
 
 #carousel img {
     align-self: center;
     justify-self: center;
-    width: auto;
     max-height: 400px;
-    /* pictures gonna be cropped to one size, somewhere around 515/400 */
+    height: auto;
+
+    /* pictures cropped to 1496/997 because why not */
 }
 
 
@@ -33,13 +39,18 @@ body {
 }
 
 
-.btn-primary { /*TODO: change background color, original was #0d6efd */
-    /* background-color: #6C8493;
-    border-color: #6C8493; */
+.btn-primary { 
     background-color: #4F606B ;
     border-color: #4F606B;
 
 }
+
+.btn-primary:hover {
+    background-color: #4d7e94;
+    border-color: #4d7e94;
+}
+
+
 
 #compositionDesc {
     display: inline;
@@ -63,7 +74,7 @@ body {
 
 #descriptionContainer {
     background-color: aliceblue;
-    height: 200px; /* once descriptions have been decided on, just set it to one 
+    min-height: 200px; /* once descriptions have been decided on, just set it to one 
     a min height that contains them all */
 
 }
@@ -86,7 +97,6 @@ body {
 
 audio {
     max-width: 100%;
-    
 }
 
 /* Footer */
@@ -125,6 +135,17 @@ footer {
 }
 
 @media only screen and (max-width: 650px) {
+    #carousel{
+        display: none;
+    }
+
+    #tableture {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-height: 550px) {
     #carousel{
         display: none;
     }
