@@ -6,6 +6,10 @@ body {
 
 /* Nav bar */
 
+#homeButton {
+    display: none; /* change once we have different pages */
+}
+
 #referencesLink {
     display: none; /* change once we actually have a reference page */ 
 }

@@ -38,3 +38,10 @@ document.getElementById("bioButt").addEventListener("click", function() {
     document.getElementById("contactDesc").style.display = "none";
     document.getElementById("bioDesc").style.display = "inline";
 });
+
+/* TODO: code to make clicking on contact button also open contact/pricing
+    page */
+
+document.getElementById("navbarContact").addEventListener("click", function() {
+    document.getElementById("contactButt").click();
+});
