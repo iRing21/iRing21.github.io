@@ -45,3 +45,4 @@ document.getElementById("bioButt").addEventListener("click", function() {
 document.getElementById("navbarContact").addEventListener("click", function() {
     document.getElementById("contactButt").click();
 });
+
