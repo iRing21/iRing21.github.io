@@ -113,20 +113,24 @@
             </div> 
           </section>
           <section class="container" id="workExamplesSection">
-            <div class="container-fluid border-top border-start border-end border-5 border-dark infoBar" id="examplesHeading">
+            <div class="container-fluid border-top border-start border-end border-bottom border-5 border-dark infoBar" id="examplesHeading">
               <h2>Examples of Work</h2>
               <p>All audio was composed, recorded, mixed, edited, and mastered in house...
                 unless otherwise noted.
               </p>
             </div>
-            <div class="accordion border-start border-end border-bottom border-5 border-dark " id="audioExamples">
+            <!-- First Accordion, for Advertisements/Adsampler-->
+            <div class="container border-start border-end border-5 border-dark smallInfoBar" id="adsHeading">
+              <h4>Advertisements</h4>
+            </div>
+            <div class="accordion border-start border-end border-5 border-dark " id="adsAccordion">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h2 class="accordion-header" id="adsHeadingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#adsCollapseOne" aria-expanded="true" aria-controls="adsCollapseOne">
                     Advertisement Sampler
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="adsCollapseOne" class="accordion-collapse collapse show" aria-labelledby="adsHeadingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <audio controls>
                           <source src="media/audio/adSampler.wav" type="audio/wav">
@@ -141,33 +145,117 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <!-- Second Accordion, for Soundtracks/Ambient Music -->
+            <div class="container border-start border-end border-5 border-dark smallInfoBar" id="soundtracksHeading">
+              <h4>Soundtracks and Ambient Music</h4>
+            </div>
+            <div class="accordion border-start border-end border-5 border-dark " id="soundtracksAccordion">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
+                <h2 class="accordion-header" id="soundtracksHeadingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#soundtracksCollapseOne" aria-expanded="false" aria-controls="soundtracksCollapseOne">
+                    Piano Synthata
                   </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
+                <div id="soundtracksCollapseOne" class="accordion-collapse collapse" aria-labelledby="soundtracksHeadingOne" >
                   <div class="accordion-body">
                     <audio controls>
-                      <source src="media/audio/ad final.wav" type="audio/wav">
+                      <source src="media/audio/pianoSynth.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio> 
-                    <p><strong>Some bolded shit</strong> 
-                      Any further relevant information here.
+                    <p>A piano and synthesizer composition designed for video media or video games.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
+                <h2 class="accordion-header" id="soundtracksHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#soundtracksCollapseTwo" aria-expanded="false" aria-controls="#soundtracksCollapseTwo">
+                    Ambivalence
+                  </button>
+                </h2>
+                <div id="soundtracksCollapseTwo" class="accordion-collapse collapse" aria-labelledby="soundtracksHeadingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <audio controls>
+                      <source src="media/audio/Ambivalence.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio> 
+                    <p>Copy 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="soundtracksHeadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#soundtracksCollapseThree" aria-expanded="false" aria-controls="soundtracksCollapseThree">
+                    Wonder Wander
+                  </button>
+                </h2>
+                <div id="soundtracksCollapseThree" class="accordion-collapse collapse" aria-labelledby="soundtracksHeadingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <audio controls>
+                      <source src="media/audio/Wonder Wander Remastered.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio> 
+                    <p>Copy
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="soundtracksHeadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#soundtracksCollapseFour" aria-expanded="false" aria-controls="soundtracksCollapseFour">
+                    Distance (An Autumn Far Away)
+                  </button>
+                </h2>
+                <div id="soundtracksCollapseFour" class="accordion-collapse collapse" aria-labelledby="soundtracksHeadingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <audio controls>
+                      <source src="media/audio/Distance (Autumn Far Away) Remastered.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio> 
+                    <p>Copy 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="soundtracksHeadingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#soundtracksCollapseFive" aria-expanded="false" aria-controls="#soundtracksCollapseFive">
+                    Assembled Lines 3
+                  </button>
+                </h2>
+                <div id="soundtracksCollapseFive" class="accordion-collapse collapse" aria-labelledby="soundtracksHeadingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <audio controls>
+                      <source src="media/audio/Assembled Lines 3.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio> 
+                    <p>Copy 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Third Accordion, for Songs-->
+            <div class="container border-start border-end border-5 border-dark smallInfoBar" id="songsHeading">
+              <h4>Songs</h4>
+            </div>
+            <div class="accordion border-start border-end border-bottom border-5 border-dark " id="adSamplerAccordion">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
+                    Song Composition - Coddiwomple
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <audio controls>
+                      <source src="media/audio/eCig.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio> 
+                    <p>A composition written for a band containing classical guitar, piano, bass, 12 string guitar, mountain dulcimer, and synthesizer. 
+                    </p>
                   </div>
                 </div>
               </div>
