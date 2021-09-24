@@ -10,9 +10,6 @@ body {
     display: none; /* change once we have different pages */
 }
 
-#referencesLink {
-    display: none; /* change once we actually have a reference page */ 
-}
 
 /* Carousel */
 
@@ -60,8 +57,6 @@ body {
     background-color: #4d7e94;
     border-color: #4d7e94;
 }
-
-
 
 #compositionDesc {
     display: inline;
@@ -121,6 +116,20 @@ body {
 
 audio {
     max-width: 100%;
+}
+
+/* References */
+
+#references {
+    margin-bottom: 20px;
+}
+
+#referencesContainer {
+    background-color: aliceblue;
+}
+
+.referencesDescriptions {
+    margin-top: 10px;
 }
 
 /* Footer */
