@@ -85,6 +85,11 @@ body {
 
 }
 
+.tabDescriptionsP {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 /* Accordion Section */
 
 #workExamplesSection {
